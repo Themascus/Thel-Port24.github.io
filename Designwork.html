@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thelonious' Designs</title>
+    <link rel="stylesheet" href="website.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+
+<div class="navbarME">
+    <a href="Index.html">Home</a>
+    <a href="AboutMe.html">About Me</a>
+    <a href="Moodboard.html">Mood</a>
+    <a href="Artwork.html">My Art</a>
+    <a href="Designwork.html" class="active">My Designs</a>
+  </div>
+
+
+<body>
+  
+    <div class="heading"></div> 
+
+
+    <div class="desp">
+        <p>Throughout my academic journey I have practiced many different Design tools
+            and by clicking on each button, you will see the full list of what I have 
+            accomplished throught my courses. Then by selecting the image, you will see my process
+            of making each project. My goal here is true transparency and honesty so the viewer
+            can see my work through my eyes. 
+        </p>
+      </div>
+
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Project Tools</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="Designwork_ill.html">Illustrator</a>
+        <a href="Designwork_PS.html">Photoshop</a>
+        <a href="Designwork_Fig.html">Figma</a>
+        <a href="DesignWeb.html">HTML</a>
+      </div>
+    </div>
+    
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+
+    <!--  
+    <button class="btn ill">illustrator</button>
+ -->
+
+    <!-- <div class="scroll-container">
+
+
+
+        Decided to move to all different pages
+    <img class="illpic" src="designphotos/Illustrator/Theloverse2.png">
+    <img class="illpic" src="designphotos/Illustrator/JP.png">
+    <img class="illpic" src="designphotos/Illustrator/ESNblack.png">
+    <img class="illpic" src="designphotos/Illustrator/DameTime.png">
+    </div>
+        </div>
+    </div>
+    </div>
+   
+    <p>Photoshop</p>
+    <div class="scroll-container">
+    <img class="phopic" src="designphotos/Photoshop/Dmitch.jpg">
+    <img class="phopic" src="designphotos/Photoshop/church copy.jpg">
+    </div>
+    
+    <p>Figma</p>
+    <div class="scroll-container">
+    <a href="https://www.figma.com/proto/v5wRERcJaHvIz4z6i0WbCZ/BlackbookTurnedIN.?page-id=0%3A1&node-id=7-351&viewport=-360%2C-57%2C0.35&t=0xZuKHAH3Nedeg5t-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=7%3A351">
+        <img class="figpic" src="Figma/BBCover.png" alt="Blackbook cover">
+     </a>
+     <img class="figpic" src="Figma/BBLanding.png" >
+     <img class="figpic" src="Figma/Blackbook.png">
+    </div>
+   
+    <p>HTML</p>
+    <div class="scroll-container">
+    <a href ="https://www.figma.com/board/HyrQbEgmEGr16SvAbfZxuT/WebsiteSystem?node-id=4-44&t=r9BgplgaYH17VKdV-1">
+        <img class="figpic" src="Figma/HTML.png">
+    </a>
+    </div> -->
+    <!-- List then carousel  -->
+</body>
+</html>
